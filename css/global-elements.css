@@ -3,6 +3,7 @@ body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
   background-color: rgb(12, 12, 12);
+  text-rendering: optimizeLegibility;
 }
 input {
   width: 120px;
@@ -17,18 +18,14 @@ button {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   color: rgb(255, 255, 255);
-  font-size: 14px;
-  width: 120px;
-  height: 35px;
+  font-size: 15px;
+  width: 130px;
+  height: 40px;
   cursor: pointer;
   border: none;
-  border-radius: 5px;
-  background: rgb(234, 0, 217);
-  background: linear-gradient(
-    90deg,
-    rgba(234, 0, 217, 1) 0%,
-    rgba(10, 189, 198, 1) 100%
-  );
+  border-radius: 10px;
+  letter-spacing: 0.05em;
+  background: linear-gradient(90deg, #0072ff 0%, #00d4ff 100%);
 }
 
 img {
