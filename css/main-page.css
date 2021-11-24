@@ -1,17 +1,58 @@
+body {
+  height: auto;
+}
+img {
+  object-fit: cover;
+}
+
+.website-image {
+  background: url(../img/main-page.jpg) no-repeat center center fixed;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .gallery {
+  max-width: 1200px;
+
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 22fr);
   gap: 10px;
   grid-auto-rows: minmax(100px, auto);
   width: 100%;
-  height: 100vh;
-
-  background-color: aqua;
+  height: auto;
 }
 
 .gallery-pad {
-  height: 200px;
-  background-color: brown;
-  border: 2px black solid;
-  margin: 20px 50px;
+  background-color: rgb(34, 34, 34);
+  height: auto;
+  text-align: center;
+  position: relative;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 25vh;
+  position: relative;
+}
+
+.author {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  color: aliceblue;
+}
+
+@media screen and (max-width: 768px) {
+  .gallery {
+    margin-top: 50px;
+    grid-template-columns: repeat(1, 1fr);
+
+    grid-auto-rows: minmax(100px, auto);
+  }
+  .gallery-image {
+    height: 200px;
+  }
 }

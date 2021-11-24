@@ -17,40 +17,41 @@
 </head>
 
 <body>
-    <div class="website-image"></div>
-    <div class="website">
-        <div class="header">
-            <div class="nav-panel">
-                <button class="nav-panel-button" onclick="document.location='register.html'">REJESTRACJA</button>
-            </div>
-        </div>
-
-        <div class="form-container">
-            <div class="form-container-panel">
-                <p class="form-container-title">Logowanie użytkownika</p>
-                <form class="form-container-panel-form">
-
-
-                    <label name="username">Nazwa użytkownika</label>
-                    <input class="form-container-panel-form-input" id="username" type="text" minlength="6"
-                        maxlength="20" pattern="[a-zA-Z0-9-]+" required>
-
-
-                    <label name="password">Hasło</label>
-                    <input class="form-container-panel-form-input" id="password" type="password" minlength="6" required>
-
-
-                    <button class="form-button" type="submit">Zaloguj</button>
-
-
-                </form>
-
+    <div class="website-image">
+        <div class="website">
+            <div class="header">
+                <div class="nav-panel">
+                    <button class="nav-panel-button" onclick="document.location='register.html'">REJESTRACJA</button>
+                </div>
             </div>
 
-        </div>
+            <div class="form-container">
+                <div class="form-container-panel">
+                    <p class="form-container-title">Logowanie użytkownika</p>
+                    <form class="form-container-panel-form">
 
+
+                        <label name="username">Nazwa użytkownika</label>
+                        <input class="form-container-panel-form-input" id="username" type="text" minlength="6"
+                            maxlength="20" pattern="[a-zA-Z0-9-]+" required>
+
+
+                        <label name="password">Hasło</label>
+                        <input class="form-container-panel-form-input" id="password" type="password" minlength="6"
+                            required>
+
+
+                        <button class="form-button" type="submit">Zaloguj</button>
+
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
     </div>
-
     <script src="script.js">
     </script>
 </body>
