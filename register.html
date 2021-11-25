@@ -28,7 +28,7 @@
             <div class="form-container">
                 <div class="form-container-panel">
                     <p class="form-container-title">Rejestracja użytkownika</p>
-                    <form class="form-container-panel-form">
+                    <form id="register-form" class="form-container-panel-form">
                         <label name="username">Nazwa użytkownika</label>
                         <input class="form-container-panel-form-input" id="username" type="text" minlength="6"
                             maxlength="20" pattern="[a-zA-Z0-9-]+" required>
@@ -44,8 +44,10 @@
 
                         <input class="form-container-panel-form-input" id="password" type="password" minlength="6"
                             required>
+                        <p id="demo"></p>
 
-                        <button class="form-button" type="submit">Zarejestruj</button>
+                        <button onclick="validate_emails()" id="register" class="form-button"
+                            type="susbmit">Zarejestruj</button>
 
 
                     </form>
@@ -56,8 +58,8 @@
 
         </div>
     </div>
-    <script src="script.js">
-    </script>
+
+    <script src="register.js"></script>
 </body>
 
 </html>
