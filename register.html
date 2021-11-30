@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
+    <title>Rejestracja</title>
+    <meta name="author" content="Michał Moś">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap" rel="stylesheet">
@@ -21,14 +22,15 @@
         <div class="website">
             <div class="header">
                 <div class="nav-panel">
-                    <button class="nav-panel-button" onclick="document.location='login.html'">ZALOGUJ</button>
+                    <button class="nav-panel-button" onclick="document.location='login.html'">Zaloguj</button>
                 </div>
             </div>
 
             <div class="form-container">
                 <div class="form-container-panel">
                     <p class="form-container-title">Rejestracja użytkownika</p>
-                    <form id="register-form" class="form-container-panel-form" onsubmit="saveData()">
+                    <form id="register-form" class="form-container-panel-form"
+                        onsubmit="saveData(), validate_emails() ">
                         <label name="username">Nazwa użytkownika</label>
                         <input class="form-container-panel-form-input" id="username" type="text" minlength="6"
                             maxlength="20" pattern="[a-zA-Z0-9-]+" required>

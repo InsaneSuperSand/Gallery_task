@@ -4,13 +4,11 @@ function getPhotos(images) {
   images.map((image) => {
     cardTag = `
                 <div class="gallery-pad">
-                  
                   <img class="gallery-image" src=${image.src.portrait}/>
-                <div class="info-banner">
+                  <div class="info-banner">
                     <p class="author"> ${image.photographer} </p>
-                    </div>
+                  </div>
                 </div>
-                
               `;
     gallery.innerHTML += cardTag;
   });
@@ -30,4 +28,3 @@ fetch(
     getPhotos(data.photos);
     console.log(data);
   });
-

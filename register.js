@@ -1,4 +1,3 @@
-
 let validate_emails = () => {
   let email = document.forms["register-form"]["email"].value;
   let confirm_email = document.forms["register-form"]["confirm-email"].value;
@@ -31,6 +30,5 @@ function saveData() {
       password: password,
     });
     localStorage.setItem("users", JSON.stringify(user_records));
-    window.open("main-page.html", "_blank");
   }
 }

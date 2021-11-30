@@ -5,23 +5,3 @@ input:invalid:focus {
   border: red 2px solid;
 }
 
-@media screen and (max-width: 768px) {
-  .form-container-panel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-
-  .form-container-panel-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .form-container-panel-form-input {
-    padding: 10px;
-    margin-bottom: 12px;
-    box-sizing: border-box;
-    width: 200px;
-  }
-}
