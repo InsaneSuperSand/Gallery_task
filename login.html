@@ -28,7 +28,7 @@
             <div class="form-container">
                 <div class="form-container-panel">
                     <p class="form-container-title">Logowanie użytkownika</p>
-                    <form class="form-container-panel-form">
+                    <form class="form-container-panel-form" onsubmit="check_data()">
 
 
                         <label name="username">Nazwa użytkownika</label>
@@ -41,7 +41,7 @@
                             required>
 
 
-                        <button onclick="check_data()" class="form-button" type="submit">Zaloguj</button>
+                        <button class="form-button" type="submit">Zaloguj</button>
 
 
                     </form>
@@ -53,7 +53,7 @@
         </div>
     </div>
 
-    <script src="register.js"></script>
+    <script src="login.js"></script>
 </body>
 
 </html>

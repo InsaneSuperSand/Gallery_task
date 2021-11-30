@@ -3,7 +3,6 @@ checkwork = () => {
   const username_hook = document.getElementById("username").value;
 };*/
 
-
 let validate_emails = () => {
   let email = document.forms["register-form"]["email"].value;
   let confirm_email = document.forms["register-form"]["confirm-email"].value;
@@ -13,9 +12,6 @@ let validate_emails = () => {
   }
 };
 
-
-
-/*
 function saveData() {
   let name, email, password;
   name = document.getElementById("username").value;
@@ -39,13 +35,10 @@ function saveData() {
       password: password,
     });
     localStorage.setItem("users", JSON.stringify(user_records));
+    window.open("main-page.html", "_blank");
   }
 }
 
-function check_data() {
-  var arr = JSON.parse(localStorage.getItem("users"));
-  let users = JSON.parse(localStorage.getItem("name"));
-}*/
 /*
 
 var ID = function () {
