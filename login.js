@@ -9,10 +9,10 @@ function check_data() {
       return user.name == name && user.password == password;
     })
   ) {
-    // alert("Zalogowano");
+     alert("Zalogowano");
 
     window.open("main-page.html", "_blank");
   } else {
-    alert("wrong email or password");
+    alert("Zły adres email bądź hasło");
   }
 }
