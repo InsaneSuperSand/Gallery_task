@@ -28,7 +28,7 @@
             <div class="form-container">
                 <div class="form-container-panel">
                     <p class="form-container-title">Rejestracja użytkownika</p>
-                    <form id="register-form" class="form-container-panel-form">
+                    <form id="register-form" class="form-container-panel-form" onsubmit="saveData()">
                         <label name="username">Nazwa użytkownika</label>
                         <input class="form-container-panel-form-input" id="username" type="text" minlength="6"
                             maxlength="20" pattern="[a-zA-Z0-9-]+" required>
@@ -42,10 +42,10 @@
                         <input class="form-container-panel-form-input" id="confirm-email" type="email" required>
                         <label name="password">Hasło</label>
 
-                        <input class="form-container-panel-form-input" id="password" type="password" minlength="6" required>
+                        <input class="form-container-panel-form-input" id="password" type="password" minlength="6"
+                            required>
 
-                        <button onclick="store_data()" id="register" class="form-button"
-                            type="submit">Zarejestruj</button>
+                        <button id="register" class="form-button" type="submit">Zarejestruj</button>
 
 
                     </form>

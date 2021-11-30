@@ -2,7 +2,8 @@
 checkwork = () => {
   const username_hook = document.getElementById("username").value;
 };*/
-/*
+
+
 let validate_emails = () => {
   let email = document.forms["register-form"]["email"].value;
   let confirm_email = document.forms["register-form"]["confirm-email"].value;
@@ -10,20 +11,59 @@ let validate_emails = () => {
     alert("Adresy email są różne. Sprawdź pola jeszcze raz");
     return false;
   }
-};*/
+};
 
 
 
 /*
+function saveData() {
+  let name, email, password;
+  name = document.getElementById("username").value;
+  email = document.getElementById("email").value;
+  password = document.getElementById("password").value;
 
-let user_name = document.getElementById("username");
-let user_paswrd = document.getElementById("password");
-let user_email = document.getElementById("email");
+  let user_records = new Array();
+  user_records = JSON.parse(localStorage.getItem("users"))
+    ? JSON.parse(localStorage.getItem("users"))
+    : [];
+  if (
+    user_records.some((v) => {
+      return v.email == email;
+    })
+  ) {
+    alert("Email wykorzystany");
+  } else {
+    user_records.push({
+      name: name,
+      email: email,
+      password: password,
+    });
+    localStorage.setItem("users", JSON.stringify(user_records));
+  }
+}
+
+function check_data() {
+  var arr = JSON.parse(localStorage.getItem("users"));
+  let users = JSON.parse(localStorage.getItem("name"));
+}*/
+/*
+
+var ID = function () {
+  // Math.random should be unique because of its seeding algorithm.
+  // Convert it to base 36 (numbers + letters), and grab the first 9 characters
+  // after the decimal.
+  return "_" + Math.random().toString(36).substr(2, 9);
+};
+
+var user_name = document.getElementById("username");
+var user_paswrd = document.getElementById("password");
+var user_email = document.getElementById("email");
 
 let store_data = () => {
-  let input_username = localStorage.setItem("username", user_name.value);
-  let input_password = localStorage.setItem("password", user_paswrd.value);
-  let input_email = localStorage.setItem("email", user_email.value);
+  let id = ID();
+  let input_username = localStorage.setItem(`username${id}`, user_name.value);
+  let input_password = localStorage.setItem(`password${id}`, user_paswrd.value);
+  let input_email = localStorage.setItem(`email${id}`, user_email.value);
 };
 
 let check_data = () => {
