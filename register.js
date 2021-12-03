@@ -14,15 +14,19 @@ function saveData() {
   password = document.getElementById("password").value;
 
   let user_records = new Array();
-  user_records = JSON.parse(localStorage.getItem("users"))
-    ? JSON.parse(localStorage.getItem("users"))
-    : [];
+  user_records = JSON.parse(localStorage.getItem("users")) ? JSON.parse(localStorage.getItem("users")) : [];
   if (
     user_records.some((v) => {
       return v.email == email;
     })
   ) {
-    alert("Email wykorzystany");
+    alert("Użytkownik o takim adresie email już istnieje");
+  } else if (
+    user_records.some((v) => {
+      return v.name == name;
+    })
+  ) {
+    alert("Użytkownik o takim loginie już istnieje");
   } else {
     user_records.push({
       name: name,
