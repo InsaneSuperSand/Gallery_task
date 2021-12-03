@@ -29,13 +29,12 @@
             <div class="form-container">
                 <div class="form-container-panel">
                     <p class="form-container-title">Rejestracja użytkownika</p>
-                    <form id="register-form" class="form-container-panel-form"
-                        onsubmit="saveData(), validate_emails() ">
+                    <form id="register-form" class="form-container-panel-form" onsubmit=" saveData()  ">
                         <label name="username">Nazwa użytkownika</label>
                         <input class="form-container-panel-form-input" id="username" type="text" minlength="6"
-                            maxlength="20" pattern="[a-zA-Z0-9-]+" required>
+                            maxlength="20" pattern="[a-zA-Z0-9]+" required>
 
-                        <label name="email">Adres email</label>
+                        <label name="email" pattern=".+@gmail\.com">Adres email</label>
 
                         <input class="form-container-panel-form-input" id="email" type="email" required>
 
